@@ -9,7 +9,7 @@ const sortByComments = document.getElementById("sortByComments");
 
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
-const pageEl = document.getElementById("page"); // 🔥 MISSING LINE
+const pageEl = document.getElementById("page");
 const modal = document.getElementById("modal");
 
 let posts = [];
