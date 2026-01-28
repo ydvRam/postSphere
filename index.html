@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Posts Feed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>📚 Posts Feed</h1>
+
+  <input id="searchInput" placeholder="Search posts..." />
+  <select id="searchMode">
+    <option value="title">Title only</option>
+    <option value="full">Full text</option>
+    <option value="fuzzy">Fuzzy</option>
+  </select>
+
+  <div>
+    <label><input type="checkbox" id="longPosts"> Highlight long posts</label>
+    <label><input type="checkbox" id="hideUser"> Hide User #1</label>
+    <label><input type="checkbox" id="sortByComments"> Sort by comments</label>
+  </div>
+
+  <p id="status"></p>
+
+  <section id="feed"></section>
+
+  <div>
+    <button id="prev">Prev</button>
+    <span id="page"></span>
+    <button id="next">Next</button>
+  </div>
+
+  <div id="modal" class="hidden"></div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
